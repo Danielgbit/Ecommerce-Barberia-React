@@ -1,0 +1,10 @@
+//Base
+@use "./styles/base/mixins";
+@use "./styles/base/variables.scss";
+
+//Componentes
+
+@use "./styles/components/navbar";
+@use "./styles/components/CartWitget";
+@use "./styles/components/ItemListContainer.scss";
+

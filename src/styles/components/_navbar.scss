@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Archivo:ital,wght@0,300;1,600&family=Raleway:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.containerNav{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    align-items: center;
+
+        ul{
+
+            display: flex;
+            align-items: center;
+            
+
+            li{
+                margin: 0px 20px;
+
+                .Home{
+                    color: red;
+                    font-weight:800;
+                }
+
+
+                a{  
+                    font-family: 'Dosis', sans-serif;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    color:white;
+                    transition: all 0.3s ease-in-out;
+
+                    &:hover{
+                    color: red;
+                    transform: scale(1.2);
+                    }
+
+
+
+            }
+        }
+    }
+}
+
+.NameCart{
+    display: flex;
+}
+
+
+header{
+    background-image: url(/src/img/pexels-adrien-olichon-2387819.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+h1{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.containerNav{
+    
+    
+    .MainNav{
+        display: none;
+        position: absolute;
+        width: 40px;
+        left: 90%;
+
+    }
+}
+
+
+@media screen and (max-width: 742px) {
+
+    .containerNav{
+    
+    
+        .MainNav{
+            display: block;
+    
+        }
+    }
+
+    .Navlinks{
+       position: absolute;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       width: 100vw;
+       height: 100vh;
+       background-color: rgba(0,0,0,0.9);
+
+            ul{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                li{
+                    margin: 25px 0px;
+                    font-size: 20px
+                }
+            }
+
+    }
+
+
+
+    
+}
+
+
+
+
