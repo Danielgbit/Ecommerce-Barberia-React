@@ -1,0 +1,27 @@
+.ContainerHome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.9);
+
+
+    .ContainerImg{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+
+        .imagen{
+            width: 400px;
+            height: 600px;
+            padding: 150px;
+            border-radius: 200px;
+            transition: transform 0.4s; 
+
+                &:hover
+                    {
+                        transform: translateY(20px);
+                    }
+                
+        }
+    }
+}

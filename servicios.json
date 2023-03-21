@@ -1,0 +1,80 @@
+[
+    {
+      "id": 1,
+      "categoria": "Corte de cabello",
+      "precio": 19.99,
+      "nombre": "Corte clásico",
+      "cantidad": 10
+    },
+    {
+      "id": 2,
+      "categoria": "Corte de cabello",
+      "precio": 19.99,
+      "nombre": "Corte moderno",
+      "cantidad": 6
+    },
+    {
+      "id": 3,
+      "categoria": "Corte de cabello",
+      "precio": 22.99,
+      "nombre": "Corte degradado",
+      "cantidad": 4
+    },
+    {
+      "id": 4,
+      "categoria": "Afeitado",
+      "precio": 12.99,
+      "nombre": "Afeitado clásico",
+      "cantidad": 10
+    },
+    {
+      "id": 5,
+      "categoria": "Afeitado",
+      "precio": 16.99,
+      "nombre": "Afeitado moderno",
+      "cantidad": 20
+    },
+    {
+      "id": 6,
+      "categoria": "Afeitado",
+      "precio": 19.99,
+      "nombre": "Afeitado de barba",
+      "cantidad": 10
+    },
+    {
+      "id": 7,
+      "categoria": "Peinado",
+      "precio": 10.99,
+      "nombre": "Peinado clásico",
+      "cantidad": 10
+    },
+    {
+      "id": 8,
+      "categoria": "Peinado",
+      "precio": 14.99,
+      "nombre": "Peinado moderno",
+      "cantidad": 10
+    },
+    {
+      "id": 9,
+      "categoria": "Peinado",
+      "precio": 17.99,
+      "nombre": "Peinado con gel",
+      "cantidad": 23
+    },
+    {
+      "id": 10,
+      "categoria": "Producto de cuidado",
+      "precio": 9.99,
+      "nombre": "Gel para cabello",
+      "cantidad": 12
+    },
+    {
+        "id": 11,
+        "categoria": "Producto de cuidado",
+        "precio": 8.99,
+        "nombre": "Cera para cabello",
+        "cantidad": 8
+      }
+  ]
+  

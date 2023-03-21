@@ -9,6 +9,57 @@
     list-style: none;
 }
 
+
+.Categorias{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    
+
+    .ContainerSubEnlaces{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 240px;
+        height: 100px;
+        background-color: transparent;
+        position: absolute;
+        top: 6%;
+        left: 166vh;
+        
+    
+        .SubEnlaces{
+            
+            font-size: 10px;
+            align-items: center;
+            color: white;
+            margin-top: 8px;
+            text-decoration: underline;
+
+            &:hover{
+                color: red;
+            }
+        }
+        
+    }
+
+  }
+
+
+  .fa-solid{
+    font-size: 16px;
+    padding-left: 5px;
+
+  }
+  
+.Categorias ul {
+    margin-top: 10px;
+  }
+
+
+
+
 .containerNav{
     display: flex;
     justify-content:space-between;
@@ -25,6 +76,7 @@
 
             li{
                 margin: 0px 20px;
+                padding-right: 80px;
 
                 .Home{
                     color: red;
@@ -59,13 +111,7 @@
 }
 
 
-header{
-    background-image: url(/src/img/pexels-adrien-olichon-2387819.jpg);
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-}
+
 
 h1{
     color: white;
@@ -75,6 +121,7 @@ h1{
 
 .containerNav{
     
+    background-color: black;
     
     .MainNav{
         display: none;
