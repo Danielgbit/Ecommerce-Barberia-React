@@ -2,7 +2,7 @@ import React from 'react'
 
 const CartWidget = () => {
 
-const total = 5
+const total = 0
 
   return (
     <>
@@ -12,6 +12,8 @@ const total = 5
           local_mall
         </span></a>
         <p>{total}</p>
+
+
 
     </div>
     </>

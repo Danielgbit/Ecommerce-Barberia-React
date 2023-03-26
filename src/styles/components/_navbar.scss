@@ -10,41 +10,46 @@
 }
 
 
+
+.ContainerSubEnlaces{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 240px;
+    height: 100px;
+    background-color: transparent;
+    position: absolute;
+    top: 6%;
+    left: 166vh;
+
+
+    .SubEnlaces{
+            
+        font-size: 10px;
+        align-items: center;
+        color: white;
+        margin-top: 8px;
+        text-decoration: underline;
+
+        &:hover{
+            color: red;
+        }
+    }
+
+
+
+}
+
+
 .Categorias{
     list-style: none;
     display: inline-block;
     margin-right: 20px;
-    
-
-    .ContainerSubEnlaces{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 240px;
-        height: 100px;
-        background-color: transparent;
-        position: absolute;
-        top: 6%;
-        left: 166vh;
-        
-    
-        .SubEnlaces{
-            
-            font-size: 10px;
-            align-items: center;
-            color: white;
-            margin-top: 8px;
-            text-decoration: underline;
-
-            &:hover{
-                color: red;
-            }
-        }
         
     }
 
-  }
+  
 
 
   .fa-solid{

@@ -28,13 +28,13 @@ const NavBar = () => {
               <ul>
                   <li ><Link to='/'>Inicio</Link></li>
                   <li ><Link to='/catalogo'>Catálogo</Link></li>
-                  <li className='Categorias' ><Link to='#' onClick={handleSubMenu}>Categorías <i className="fa-solid fa-arrow-down"></i></Link>
+                  <li className='Categorias'><Link to='#' onClick={handleSubMenu}>Categorías <i className="fa-solid fa-arrow-down"></i></Link>
                     {showSubMenu && (
                       <ul className='ContainerSubEnlaces'>
-                        <li ><Link className='SubEnlaces'to='/categorias/Corte-de-cabello'>Corte de cabello</Link></li>
-                        <li ><Link className='SubEnlaces'to='/categorias/afeitado'>Afeitado</Link></li>
-                        <li ><Link className='SubEnlaces'to='/categorias/peinado'>Peinado</Link></li>
-                        <li ><Link className='SubEnlaces'to='/categorias/productos-de-cabello'>Productos de cabello</Link></li>
+                        <li ><Link className='SubEnlaces' to={`/categorias/${"Corte"}`} >Corte</Link></li>
+                        <li ><Link className='SubEnlaces' to={`/categorias/${"Afeitado"}`} >Afeitado</Link></li>
+                        <li ><Link className='SubEnlaces' to={`/categorias/${"Peinado"}`} >Peinado</Link></li>
+                        <li ><Link className='SubEnlaces' to={`/categorias/${"Productos"}`} >Productos</Link></li>
                       </ul>
                     )}
                   </li>

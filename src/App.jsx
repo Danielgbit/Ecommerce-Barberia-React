@@ -1,45 +1,36 @@
-import ItemCount from './components/ItemCount';
+import ItemCount from './components/ItemDetailContainer/ItemCount';
 import reactLogo from './assets/react.svg'
 import './App.scss'
-import NavBar from './components/NavBar';
-import ItemListContainer from './components/ItemListContainer';
+import NavBar from './components/NavBar/NavBar';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import ItemList from './components/ItemList';
-import ItemDetailContainer from './components/ItemDetailContainer';
-import Home from './components/Home';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import Home from './components/NavBar/Home';
 
 
 
 function App() {
   
-
-
   return (
     <>
       <BrowserRouter>
+
+      
         <NavBar />
 
-        <Routes>
+      <Routes>
 
-          <Route exact path="/" element={<Home/>}/>
+        <Route exact path='/' element={<Home/>} />
 
-          <Route exact path="/catalogo" element={<ItemListContainer/>} />
+        <Route exact path="/catalogo" element={<ItemListContainer/>} />
 
-          <Route exact path="/detalle/:id" element={<ItemDetailContainer/>} />
+        <Route exact path= "/categorias/:categoria" element={<ItemListContainer/>} />
 
-          <Route exact path="/categorias/Corte-de-cabello" element={<ItemListContainer/>} />
+        <Route exact path='/detalle/:id' element={<ItemDetailContainer/>} />
 
-          <Route exact path="/categorias/afeitado" element={<ItemListContainer/>} />
-       
-          <Route exact path="/categorias/peinado" element={<ItemListContainer/>} />
-    
-          <Route exact path="/categorias/productos-de-cabello" element={<ItemListContainer/>} />
-
-    
-
-        </Routes>
-     
-
+      </Routes>
+        
+        <ItemDetailContainer/>
       </BrowserRouter>
     </>
   );

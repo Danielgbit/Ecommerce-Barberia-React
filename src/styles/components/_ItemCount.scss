@@ -1,107 +1,54 @@
-
-.ContainerProducts{
-    display: flex;
-    justify-content: space-evenly;
-   font-family: "Poppins", sans-serif;
-   color: white;
-  background-color: #000000;
+.botonCount {
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 10px;
+    border: none;
+    background-color: #000000;
+    color: white;
 }
 
-.Card{
-    width: 300px;
-    height: 550px;
+
+.ContainerCount {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    padding: 15px;
-    margin: 10px;
-    background: linear-gradient(343deg, rgba(97,24,24,0.9332983193277311) 36%, rgba(2,58,62,1) 76%, rgba(26,27,26,1) 100%);
-    border-radius: 100px 10px 10px 10px;
-    transition: 1.2s;
+    padding: 30px 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 200px;
+    height: 5px;
+    border-radius: 5px;
+
+    span {
+        padding: 0 20px;
+    }
+
+}
+
+.ContainerAddVaciar {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    button {
+        margin: 5px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        width: 70px;
+        height: 35px;
+        border-radius: 5px;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        font-size: 10px;
+        border: none;
 
 
 
-        p{
-            padding: 15px 0;
-        }
 
-        .botonCount{
-            width: 80px;
-            height: 30px;
-            border-radius: 5px;
-            font-family: "Poppins", sans-serif;
-            text-align: center;
-            font-size: 10px;
-            border: none;
-            background-color: #000000;
-            color: white;
-        }
-
-        img{
-            width: 200px;
-            height: 200px;
-            border-radius: 100%;
-            padding: 15px 0;
-        }
-
-        h1{
-            font-size: 25px;
-            padding: 15px 0;
-        }
-        .ContainerCount{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 30px 10px;
-            background-color: rgba(0, 0, 0, 0.5);
-            width: 200px;
-            height: 5px;
-            border-radius: 5px;
-
-            span{
-                padding: 0 20px;
-            }
-        }
-
-        .ContainerAddVaciar{
-            padding: 20px 0;
-            display: flex;
-            align-items:center;
-            justify-content: space-between;
-            
-
-                button{
-                    margin: 5px;
-                    background-color: rgba(0, 0, 0, 0.5);
-                    color: white;
-                    width: 70px;
-                    height: 35px;
-                    border-radius: 5px;
-                    font-family: "Poppins", sans-serif;
-                    text-align: center;
-                    font-size: 10px;
-                    border: none;
-                    
-
-
-                    
-                }
-            
-        }
-
-        .AddCart{
-            width: 50px;
-            height: 20px;
-            border-radius: 5px;
-            font-family: "Poppins", sans-serif;
-            text-align: center;
-            font-size: 10px;
-        }
-
-        .Categoria{
-            font-size: 10px;
-            padding-bottom: 20px;
-        }
-
+    }
 
 }

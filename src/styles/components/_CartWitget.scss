@@ -10,6 +10,8 @@
             margin: 0px 10px;
             color: white;
             transition: 0.9s;
+            font-weight: bold;
+            font-size: 30px;
 
             &:hover{
                 color: red;
@@ -20,9 +22,10 @@
         }
 
         p{
-            font-size: 15px;
+            font-size: 25px;
             transition: 0.9s;
             box-shadow: 0px 2px  white;
+           margin-bottom: 5px;
 
             &:hover{
                 color: red;
