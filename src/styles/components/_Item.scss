@@ -51,10 +51,8 @@
             position: absolute;
             right:43%;
             bottom: 8%;
-            max-width: 68px;
-            width: 100%;
-            max-height: 35px;
-            height: 100%;
+            width: 5vw;
+            height: 5vh;
             border-radius: 5px;
             border: none;
             background-color: black;
@@ -67,5 +65,10 @@
                 &:hover{
                     background-color: rgb(255, 0, 0);
                 }
+        }
+
+        .Detalle{
+            font-size: 15px;
+            box-shadow: 0.5px 0.5px 5px rgb(255, 0, 0);
         }
 }

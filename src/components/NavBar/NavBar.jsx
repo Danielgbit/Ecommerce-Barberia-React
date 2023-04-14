@@ -1,7 +1,7 @@
 import React from 'react'
-import CartWidget from './CartWidget'
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import CartWidget from '../CartContainer/CartWidget';
 
 const NavBar = () => {
 
@@ -19,9 +19,9 @@ const NavBar = () => {
 
               <div className='NameCart'>
               <Link to='/'>
-                <h1>Mandala</h1>
+                <h1 className='TitleNavMandala'>Mandala</h1>
               </Link>
-              <CartWidget/>
+                <CartWidget/>
             </div>
 
           <div className='Navlinks' >

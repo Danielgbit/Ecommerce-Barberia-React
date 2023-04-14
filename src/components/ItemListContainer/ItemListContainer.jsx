@@ -1,7 +1,8 @@
-import React from 'react'
 import ItemList from './ItemList'
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { collection, getDocs, getFirestore } from "firebase/firestore"
+
 
 
 const ItemListContainer = () => {
@@ -10,21 +11,17 @@ const ItemListContainer = () => {
 
   const {categoria} = useParams();
 
-  console.log(`categoria: ${categoria}`);
-
-  
-  const fetchData = async () => {
-    try {
-      const response = await fetch("https://raw.githubusercontent.com/Danielgbit/Base-DatosJSON/main/servicios.json");
-      const data = await response.json();
-      setServicios(data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
-  
   useEffect(() => {
-    fetchData();
+
+    const baseDatos = getFirestore()
+
+    const coleccionServicios = collection(baseDatos, "servicios")
+
+    getDocs(coleccionServicios).then((snapshot)=> {
+      const docs = snapshot.docs.map((doc)=> ({ id: doc.id, ...doc.data() }))
+      
+      setServicios(docs)
+    });
   }, []);
 
   const categoriaFilter = servicios.filter((servicio) => servicio.categoria === categoria )

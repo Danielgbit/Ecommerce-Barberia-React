@@ -1,61 +1,45 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { CartContext } from "../../Context/CartContext";
 
 
-const ItemCount = ({servicio}) => {
-
-console.log(`ItemCount: ${servicio}`)
-
-  const {cantidad} = servicio;
-
-  const [contador, setContador] = useState(0);
+const ItemCount = ({ servicio }) => {
+  const { cartItems, setCartItems, cantidadTotal, increment, decrement, vaciarCarrito } = useContext(CartContext);
+  const { cantidad = 0, nombre, categoria, precio, imagen, id} = servicio;
 
 
-  const [carrito, setCarrito] = useState([]);
+  const agregarProductosAlCarrito = (cantidad) => {
+    const servicioEnCarrito = cartItems.find((item) => item.nombre === nombre);
 
-  const agregarAlCarrito = (contador) => {
-    // Verificar si el servicio ya está en el carrito
-    const index = carrito.findIndex(item => item.servicio.id === servicio.id);
-    if (index === -1) {
-      // El servicio no está en el carrito, agregarlo
-      setCarrito([...carrito, {servicio: servicio, cantidad: contador}]);
+    if (servicioEnCarrito) {
+      setCartItems(
+        cartItems.map((item) =>
+          item.nombre === nombre ? { ...item, cantidad: item.cantidad + cantidad } : item
+        )
+      );
     } else {
-      // El servicio ya está en el carrito, sumar cantidad
-      const newCarrito = [...carrito];
-      newCarrito[index].cantidad += contador;
-      setCarrito(newCarrito);
-    }
-    // Reiniciar contador
-    setContador(0);
-  };
-
-  const increment = () => {
-    if (contador < cantidad) {
-      setContador(contador + 1);
-    } else {
-      alert("Ya no hay inventario disponible");
+      setCartItems([...cartItems, { nombre, cantidad, categoria, precio, cantidad, imagen, id }]);
     }
   };
 
-  const decrement = () => {
-    if (contador > 0) {
-      setContador(contador - 1);
-    }
-  };
+
 
   return (
     <>
-          <div className="ContainerCount">
-            <button className="botonCount" onClick={decrement}><i className="fa-solid fa-minus"></i></button>
-            <span>{contador}</span>
-            <button className="botonCount"  onClick={increment}><i className="fa-solid fa-plus"></i></button>
-            
-          </div>
-          <div className="ContainerAddVaciar">
-          <button onClick={() => agregarAlCarrito(contador)}>Agregar</button>
-            <button onClick={() => setContador(0)}>Vaciar</button>
-          </div>
+      <div className="ContainerCount">
+        <button className="botonCount" onClick={decrement}>
+          <i className="fa-solid fa-minus"></i>
+        </button>
+        <span>{cantidadTotal}</span>
+        <button className="botonCount" onClick={increment}>
+          <i className="fa-solid fa-plus"></i>
+        </button>
+      </div>
+      <div className="ContainerAddVaciar">
+        <button onClick={() => agregarProductosAlCarrito(cantidadTotal)}>Agregar</button>
+        <button onClick={vaciarCarrito}>Vaciar</button>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default ItemCount
+export default ItemCount;

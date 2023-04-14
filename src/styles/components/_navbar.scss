@@ -22,15 +22,16 @@
     position: absolute;
     top: 6%;
     left: 166vh;
+    padding: 30px 0;
+
 
 
     .SubEnlaces{
             
-        font-size: 10px;
+        font-size: 18px;
         align-items: center;
-        color: white;
-        margin-top: 8px;
-        text-decoration: underline;
+        color: rgb(255, 255, 255);
+        padding-top: 10px;
 
         &:hover{
             color: red;
@@ -113,12 +114,13 @@
 
 .NameCart{
     display: flex;
+    
 }
 
 
 
 
-h1{
+.TitleNavMandala{
     color: white;
     font-family: 'Raleway', sans-serif;
 

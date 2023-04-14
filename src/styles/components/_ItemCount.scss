@@ -8,7 +8,20 @@
     border: none;
     background-color: #000000;
     color: white;
+    text-align: center;
+    transition: 0.7s;
+
+    &:hover{
+        color: black;
+        background-color: white;
+        box-shadow: 1px 1px px rgb(255, 132, 0);
+        transform: translateY(-0.10em);
+    }
+
 }
+   
+   
+
 
 
 .ContainerCount {
@@ -17,12 +30,15 @@
     align-items: center;
     padding: 30px 10px;
     background-color: rgba(0, 0, 0, 0.5);
-    width: 200px;
+    width: 25vh;
     height: 5px;
     border-radius: 5px;
 
     span {
         padding: 0 20px;
+        font-weight: bold;
+        font-family: 'Dosis', sans-serif;
+        font-size: 20px;
     }
 
 }
@@ -35,7 +51,7 @@
 
 
     button {
-        margin: 5px;
+        margin: 8px 15px;
         background-color: rgba(0, 0, 0, 0.5);
         color: white;
         width: 70px;
@@ -43,8 +59,17 @@
         border-radius: 5px;
         font-family: "Poppins", sans-serif;
         text-align: center;
-        font-size: 10px;
+        font-size: 12px;
+        font-weight: 800;
         border: none;
+        transition: 0.7s;
+
+        &:hover{
+            background-color: white;
+            color: #000000;
+            box-shadow: 2px 2px 5px rgb(255, 132, 0);
+            transform: translateY(-0.50em);
+        }
 
 
 

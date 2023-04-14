@@ -22,10 +22,11 @@
         }
 
         p{
-            font-size: 25px;
+            font-size: 23px;
             transition: 0.9s;
-            box-shadow: 0px 2px  white;
-           margin-bottom: 5px;
+            box-shadow: 0px 3px rgb(255, 85, 0);
+            margin-left: 10px;
+            font-family: 'Dosis', sans-serif;
 
             &:hover{
                 color: red;
